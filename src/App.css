@@ -1,38 +1,321 @@
+@media only screen and (max-width: 480px){
+
+}
+
+@media only screen and (min-width: 481px) and (max-width: 786px){
+
+}
+
+@media only screen and (min-width: 787px) {
+
+}
+
+
+
+
+
+
+
+#root{
+  overflow-x: hidden;
+}
+
 .App {
   text-align: center;
+  color: black;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header{
+  margin-top: 10px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header-section1{
+  display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 16.5rem;
+    margin-bottom: 10px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.contactD{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.contactD svg{
+  color: rgb(240, 169, 3);
+}
+.header-line{
+  border-bottom: 2px solid rgba(128, 128, 128, 0.132);
+}
+.header-section2{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  justify-items: center;
+  gap: 8rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.header-start{
+  display: flex;
+  align-items: center;
+}
+.star-icon{
+  display: flex;
+  align-items: center;
+}
+.svg1{
+  position: absolute;
+transform: rotate(40deg);
+color: rgb(240, 169, 3);
+font-size: 60px;
+}
+.svg2{
+  color: rgba(240, 169, 3, 0.598);
+  font-size: 60px;
+}
+.start-name1{
+  font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 0.6rem;
+}
+.start-name2{
+  position: relative;
+  top: -5px;
+  font-weight: 400;
+}
+.header-list{
+  display: flex;
+  align-items: center;
+}
+.header-list ul{
+  display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+/* ============================BANNER=============================== */
+.banner-container{
+  background-image: linear-gradient(to right,  rgba(221, 220, 220, 0.877) 30% , #ffffff00),url(./assits/bnner1.jpg);
+  width: 100%;
+  height: 500px;
+    color: white;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  /* mask-image: linear-gradient(to left, black, transparent); */
+}
+/* .banner-main{
+  background: linear-gradient(to right, rgba(128, 128, 128, 0.653), transparent);
+    height: 500px;
+} */
+.Banner-main-left{
+  width: 40%;
+  font-size: 50px;
+  align-items: flex-start;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-left: 100px;
+  line-height: 1;
+  font-weight: 500;
+  height: 500px;
+}
+.banner-btn{
+  height: 61px;
+    color: white;
+    width: 130%;
+    background-color: rgb(255, 137, 2);
+    border: 0;
+    border-radius: 5px;
+    margin-top: 40px;
+}
+/* ===========================mission========================= */
+.misson{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+}
+.mission-text{
+  width: 40%;
+  font-size: 18px;
+}
+.mission-msg{
+  width: 50%;
+}
+.mission-container{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left: 80px;
+    margin-right: 80px;
+    gap: 8.5rem;
+}
+.mission-img img{
+  width: 100%;
+}
+/* -------------------------SOLUTION------------------------------ */
+.solution{
+  background-color: rgba(247, 235, 223, 0.84);
+}
+.solution-main{
+  margin-right: 85px;
+    margin-left: 185px;
+    position: relative;
+    top: 50px;
+}
+.solution-container{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -20px;
+}
+.solution-container-list{
+  float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 300px;
+}
+.solution-container-list ul{
+  list-style: none;
+  display: contents;
+}
+.solution-container-list li{
+  margin:  0 10px 10px 0;
+}
+.solution-main h1{
+font-size: 16px;
+font-weight: 400;
+color: rgb(241, 162, 84);
+}
+.solution-main h3{
+  font-size: 30px;
+  font-weight: 500;
+}
+.solution-main h2{
+  color: rgb(241, 162, 84);
+  font-size: 21px;
+  font-weight: 400;
+}
+
+/* ===============================WHYUS============================ */
+.whyus-container{
+  display: flex;
+  flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 33px 0px 75px 96px;
+}
+.whyus-text{
+  width: 50%;
+}
+.whyus-img{
+  width: 40%;
+}
+.whyus-img img{
+  width: 70%;
+}
+.whyus-text h4{
+  color: rgb(241, 162, 84);
+}
+.whyus-text h3{
+  font-size: 40px;
+  font-family: sans-serif;
+  font-weight: 500;
+  margin: 0;
+}
+.whyus-text h3 strong{
+  color: rgb(255, 137, 2);
+}
+.whyus-text p{
+  line-height: 1.5rem;
+}
+.whyus-btn button{
+  height: 49px;
+    width: 20%;
+    border-radius: 5px;
+    background-color: rgb(255, 137, 2);
+    color: white;
+    font-size: 10px;
+    font-weight: 600;
+    border: 1px solid black;
+}
+/* ==========================CHART ============================== */
+.chart-main{
+  background-image: url(./assits/Figure.png);
+  height: 300px;
+  width: 100%;
+  background-size: 100%;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 8px;
+}
+.chart-no{
+  text-align: center;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.chart-no span{
+  font-size: 70px;
+    font-weight: 600;
+    font-family: sans-serif;
+    line-height: 59px;
 }
+.chart-no strong{
+  color: rgba(255, 255, 255, 0.527);
+}
+/* ============================FOOTER==========================*/
+.footer{
+  background-color: rgb(241, 160, 78);
+  color: white;
+}
+.footer-container{
+  display: flex;
+  margin-left: 100px;
+  height: 320px;
+    align-items: center;
+}
+.footer-container-list{
+  width: 33.33%;
+  margin-top: 22px;
+}
+.footer-container-list-1{
+  width: 30.33%;
+  margin-left: 70px;
+}
+.footer-container-list-2{
+  width: 33.33%;
+  line-height: 2.8rem;
+}
+.footer-container-list p{
+  width: 82%;
+}
+.footer-container-list h1{
+  font-size: 18px;
+  font-weight: 500;
+}
+.footer-container-list-1 h1{
+  font-size: 18px;
+  font-weight: 500;
+}
+.footer-container-list-2 h1{
+  font-size: 18px;
+  font-weight: 500;
+}
+/* .footer-container-list li{
+  list-style: none;
+  line-height: 2rem;
+} */
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+.footer-end{
+  background-color: rgb(255, 137, 2);
+  height: 66px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
